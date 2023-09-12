@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Food Website</title>
+        <link rel="stylesheet"href="foodweb.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+
+    </head>
+    <body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <h1>Food Hub</h1>
+            </div>
+            <div class="input">
+                <input type="text" value="" id="inp" placeholder="Search Here" onkeyup="myFun()">
+                <i class="fa fa-search"></i>
+
+            </div>
+            <div class="icon">
+                <i onclick="login()" class="fa fa-user"></i>
+                <i class="fa fa-shopping-cart"></i>
+                <i onclick="nav1()"class="fa fa-bars"></i>
+            </div>
+            
+        </nav>
+        <!--login-->
+        <div class="login">
+            <h2>Log In</h2>
+            <input type="text"placeholder="Enter Your Nmae">
+            <input type="password" placeholder="Enter Your password"><br>
+            <button>Log In</button>
+        </div>
+        <div class="nav1">
+            <a href="">Home</a><hr>
+            <a id="foods"href="#food">Foods</a><hr>
+            <a id="blogs"href="#blog">Blogs</a><hr>
+            <a id="reviews"href="#review">Review</a>
+            
+        </div>
+        
+        <!--mainpage-->
+        <div class="main">
+            <div class="text">
+                <h1>Simple & Tasty Recipes</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione atque necessitatibus fugit optio consequuntur, omnis cumque nesciunt natus expedita? Corporis.</p>
+                <button>Exploar More</button>
+            </div>
+            <img src="icon/i123.jpg"alt="img">
+        </div>
+        <!--cardfood-->
+        <table>
+            <tr>
+                <td>
+                    <div class="head"id="food">
+                        <h1>Our <span>Foods</span></h1>
+                    </div>
+                    <div class="crd">
+                        <div class="card">
+                            <img src="icon/i34.jpg"alt="">
+                            <h2>299 Rupees Only</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, quis.</p>
+                            <button>Order Now</button>
+                        </div>
+
+                        <div class="card">
+                            <img src="icon/i12.jpg"alt="">
+                            <h2>299 Rupees Only</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, quis.</p>
+                            <button>Order Now</button>
+                        </div>
+
+                        <div class="card">
+                            <img src="icon/i441.jpg"alt="">
+                            <h2>299 Rupees Only</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, quis.</p>
+                            <button>Order Now</button>
+                        </div>
+
+                    </div>
+                    <div class="crd">
+                        <div class="card">
+                            <img src="icon/i66jpg.jpg"alt="">
+                            <h2>299 Rupees Only</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, quis.</p>
+                            <button>Order Now</button>
+                        </div>
+
+                        <div class="card">
+                            <img src="icon/i77.jpg"alt="">
+                            <h2>299 Rupees Only</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, quis.</p>
+                            <button>Order Now</button>
+                        </div>
+
+                        <div class="card">
+                            <img src="icon/i990.jpg"alt="">
+                            <h2>299 Rupees Only</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, quis.</p>
+                            <button>Order Now</button>
+                        </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="head" id="blog">
+                        <h1>Our <span>Blogs</span></h1>
+                    </div>
+                    <div class="crd">
+                        <div class="blog">
+                            <img src="icon/bur7.jpg"alt="">
+                            <h2>Fact About Indian Food</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, quis.</p>
+                            <a href="https://www.indianfoodsite.com/">Read More</a>
+                        </div>
+
+                        <div class="blog">
+                            <img src="icon/bur8.jpg"alt="">
+                            <h2>Diffrent Types Of Food</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, quis.</p>
+                            <a href="https://en.wikipedia.org/wiki/Indian_cuisine">Read More</a>
+                        </div>
+
+                        <div class="blog">
+                            <img src="icon/bur9.jpg"alt="">
+                            <h2>Delicious Indian Dishes</h2>
+                            <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, quis.</p>
+                            <a href="https://www.tastingtable.com/772393/delicious-indian-dishes-you-have-to-try-at-least-once/">Read More</a>
+                        </div>
+
+                    </div>
+                </td>
+
+            </tr>
+        </table>
+        <!--customer review-->
+        <div class="head1" id="review">
+            <h1>Customer <span>Review</span></h1>
+        </div>
+        <div class="customer">
+            <div class="review">
+                <img src="icon/i1.webp"><br>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-full"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nam vel dicta dolorem incidunt aperiam.</p>
+            </div>
+
+            <div class="review">
+                <img src="icon/i41.jpg"><br>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-full"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nam vel dicta dolorem incidunt aperiam.</p>
+            </div>
+
+            <div class="review">
+                <img src="icon/i21.jpg"><br>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-full"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nam vel dicta dolorem incidunt aperiam.</p>
+            </div>
+            
+        </div>
+        
+
+        <div class="footer">
+            <div class="text">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit <br>amet consectetur adipisicing elit.<br> Asperiores, adipisci.</p>
+            </div>
+            <div class="text">
+                <h2>Product</h2>
+                <p>our Tast</p>
+                <p>Theme</p>
+                <p>Quality</p>
+                <p>Best Price</p>
+            </div>
+            <div class="text">
+                <h2>Quality</h2>
+                <p>Focuse</p>
+                <p>customer</p>
+                <p>Review</p>
+                <p>Offer</p>
+            </div>
+            <div class="text">
+                <h2>Address</h2>
+                <p>4th Floore Gate</p>
+                <p>Top Market</p>
+                <p>Khargone</p>
+            </div>
+          </div>
+    </div>
+    <script src="foodweb.js"></script>
+    </body>
+</html>
